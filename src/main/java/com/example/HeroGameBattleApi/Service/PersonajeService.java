@@ -20,4 +20,14 @@ public class PersonajeService {
 	public Personaje guardarPersonaje(Personaje personaje) {
 		return personajeRepository.save(personaje);
 	}
+	
+	public boolean eliminarPersonaje(Long id) {
+		try {
+			personajeRepository.deleteById(id);
+			return true;
+		}
+		catch(Exception e) {
+			return false;
+		}
+	}
 }
