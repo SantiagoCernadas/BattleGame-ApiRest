@@ -1,5 +1,7 @@
 package com.example.HeroGameBattleApi.Entity;
 
+import java.awt.Image;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,6 +22,10 @@ public class Personaje {
 	private String nombre;
 	private Integer fuerza;
 	private Integer velocidad;
+	private Integer agilidad;
+	private Integer resistencia;
+	private Integer inteligencia;
+	
 	public Long getId() {
 		return id;
 	}
@@ -44,8 +50,23 @@ public class Personaje {
 	public void setVelocidad(Integer velocidad) {
 		this.velocidad = velocidad;
 	}
+	public Integer getResistencia() {
+		return resistencia;
+	}
+	public void setResistencia(Integer resistencia) {
+		this.resistencia = resistencia;
+	}
+	public Integer getAgilidad() {
+		return agilidad;
+	}
+	public void setAgilidad(Integer agilidad) {
+		this.agilidad = agilidad;
+	}
+	public Integer getInteligencia() {
+		return inteligencia;
+	}
+	public void setInteligencia(Integer inteligencia) {
+		this.inteligencia = inteligencia;
+	}
 	
-	
-	
-
 }
