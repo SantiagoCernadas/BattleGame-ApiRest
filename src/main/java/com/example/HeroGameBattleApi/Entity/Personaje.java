@@ -1,7 +1,4 @@
 package com.example.HeroGameBattleApi.Entity;
-
-import java.awt.Image;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,6 +22,7 @@ public class Personaje {
 	private Integer agilidad;
 	private Integer resistencia;
 	private Integer inteligencia;
+	private String imagen;
 	
 	public Long getId() {
 		return id;
@@ -68,5 +66,12 @@ public class Personaje {
 	public void setInteligencia(Integer inteligencia) {
 		this.inteligencia = inteligencia;
 	}
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+	
 	
 }
