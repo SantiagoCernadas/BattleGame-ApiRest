@@ -30,6 +30,11 @@ public class PersonajeController {
 		return personajeService.guardarPersonaje(personaje);
 	}
 	
+	@GetMapping("/{id}")
+	public Personaje obtenerPersonaje(@PathVariable("id") Long id) {
+		return personajeService.obtenerPersonaje(id);
+	}
+	
 	@DeleteMapping(path = "/{id}")
 	public String eliminarPersonaje(@PathVariable("id") Long id) {
 		if(personajeService.eliminarPersonaje(id)) {

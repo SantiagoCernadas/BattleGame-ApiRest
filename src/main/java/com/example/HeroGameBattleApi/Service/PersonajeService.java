@@ -17,6 +17,10 @@ public class PersonajeService {
 		return (ArrayList<Personaje>)personajeRepository.findAll();
 	}
 	
+	public Personaje obtenerPersonaje(Long id) {
+		return personajeRepository.findById(id).get();
+	}
+	
 	public Personaje guardarPersonaje(Personaje personaje) {
 		return personajeRepository.save(personaje);
 	}
