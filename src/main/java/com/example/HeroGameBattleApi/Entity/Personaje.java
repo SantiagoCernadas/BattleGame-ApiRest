@@ -65,6 +65,8 @@ public class Personaje {
 	public void setInteligencia(Integer inteligencia) {
 		this.inteligencia = inteligencia;
 	}
-	
+	public Integer getSumatoriaEstadisticas() {
+		return fuerza + velocidad + agilidad + resistencia + inteligencia;
+	}
 	
 }
